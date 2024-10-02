@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+// will i be able to see this after i use github dev? 
+// is this saved for pull?
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -81,11 +82,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
           />
           Go to nextjs.org →
         </a>
