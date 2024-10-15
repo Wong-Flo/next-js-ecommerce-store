@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { getProducts } from './database/productlist';
 
 export const metadata = {
@@ -14,13 +15,15 @@ export default function ProductPage() {
       {products.map((product) => {
         return (
           <div key={`products-${product.id}`}>
-            <div>{product.productName}</div>
-            <Image
-              src={`/images/${product.productName.toLowerCase()}.jpg`}
-              alt={product.productName}
-              width={200}
-              height={250}
-            />
+            <Link href={`/products/${product.id}`}>
+              <div>{product.productName}</div>
+              <Image
+                src={`/images/${product.productName.toLowerCase()}.jpg`}
+                alt={product.productName}
+                width={200}
+                height={250}
+              />
+            </Link>
           </div>
         );
       })}
