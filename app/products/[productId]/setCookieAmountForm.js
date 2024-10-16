@@ -2,20 +2,26 @@
 import { useState } from 'react';
 import { createCookieAmount } from './action';
 
-export default function SetCookieAmountForm() {
+export default function SetCookieAmountForm({ productId }) {
   const [cookieAmountValue, setCookieAmountValue] = useState(0);
   return (
     <form>
       {cookieAmountValue}
       <button
-        formAction={() => createCookieAmount()}
+        formAction={async () =>
+          await createCookieAmount(cookieAmountValue, productId)
+        }
         onClick={() => setCookieAmountValue(cookieAmountValue + 1)}
       >
         +
       </button>
       <button
-        formAction={() => createCookieAmount()}
-        onClick={() => setCookieAmountValue(cookieAmountValue - 1)}
+        formAction={async () =>
+          await createCookieAmount(cookieAmountValue, productId)
+        }
+        onClick={() =>
+          cookieAmountValue > 0 && setCookieAmountValue(cookieAmountValue - 1)
+        }
       >
         -
       </button>
