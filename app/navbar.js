@@ -1,8 +1,8 @@
-import { cookies } from 'next/headers';
+// import { cookies } from 'next/headers';
 import Link from 'next/link';
 
-export default function NavBar() {
-  const totalItemsInCart = cookies().get('cookieAmount');
+export default async function NavBar() {
+  // const totalItemsInCart = (await cookies()).get('cookieAmount');
   return (
     <div>
       <nav>
@@ -11,7 +11,7 @@ export default function NavBar() {
         <Link href="/products">Products</Link>
         <Link href="/blog">Blog</Link>
         <Link href="/about">About</Link>
-        <Link href="/cart">Cart{totalItemsInCart.value}</Link>
+        <Link href="/cart">Cart</Link>
       </nav>
     </div>
   );

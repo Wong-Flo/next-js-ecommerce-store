@@ -2,11 +2,15 @@
 import { cookies } from 'next/headers';
 import { getProduct } from '../database/productlist';
 
-export async function createCookieAmount(props, cookieAmountValue) {
-  const singleProduct = getProduct(Number((await props.params).productId));
-  return (await cookies()).set(
-    `${singleProduct.id}`,
-    cookieAmountValue.toString(),
+export async function createCookieAmount(cookieAmount, product) {
+  (await cookies()).set(
+    'cookieAmount',
+    JSON.stringify([
+      {
+        Id: getProduct(product.id),
+        Amount: cookieAmount,
+      },
+    ]),
   );
 }
 
@@ -18,4 +22,4 @@ export async function createCookieAmount(props, cookieAmountValue) {
 search for cookieAmount to change name more than 1 place uses this
 */
 
-//MAKE cookieNAME dynamic
+// MAKE cookieNAME dynamic
