@@ -171,11 +171,11 @@ const products = [
   },
   {
     id: 23,
-    productName: 'joefrex espresso leveler',
+    productName: 'joefrex tool',
     categoryType: 'accessory',
     price: 45.99,
     description:
-      'This precision espresso leveler by JoeFrex ensures perfectly even distribution of coffee grounds before tamping. Adjustable height ensures a consistently flat surface, improving shot quality.',
+      'This precision espresso tool by JoeFrex ensures perfectly even distribution of coffee grounds before tamping.',
   },
   {
     id: 24,

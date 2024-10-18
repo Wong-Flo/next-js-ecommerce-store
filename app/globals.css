@@ -9,6 +9,22 @@
     --foreground: #ededed;
   }
 }
+.header .footer {
+  display: flex;
+  justify-content: space-between; /* Push items to the left and right */
+  font-weight: bold; /* Make text bold */
+  padding: 20px;
+}
+
+.navBarItem {
+  text-align: left; /* Align the left item text */
+  padding: 15px;
+}
+
+.cartTop {
+  position: absolute;
+  right: 20px;
+}
 
 html,
 body {
@@ -39,4 +55,25 @@ a {
   html {
     color-scheme: dark;
   }
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+/* styling for divs */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Optional, adds space between divs */
+}
+.small {
+  width: 32%;
+  margin-bottom: 20px; /* Space between rows */
+  background-color: transparent;
+  padding: 10px; /* Optional, space inside each div */
+  box-sizing: border-box; /* Include padding in width calculation */
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

@@ -12,21 +12,23 @@ export default function ProductPage() {
   return (
     <div>
       <h1>Product Page</h1>
-      {products.map((product) => {
-        return (
-          <div key={`products-${product.id}`}>
-            <Link href={`/products/${product.id}`}>
+      <div className="container">
+        {products.map((product) => {
+          return (
+            <div className="small" key={`products-${product.id}`}>
+              <Link href={`/products/${product.id}`}>
+                <Image
+                  src={`/images/${product.productName.toLowerCase()}.jpg`}
+                  alt={product.productName}
+                  width={200}
+                  height={250}
+                />
+              </Link>
               <div>{product.productName}</div>
-              <Image
-                src={`/images/${product.productName.toLowerCase()}.jpg`}
-                alt={product.productName}
-                width={200}
-                height={250}
-              />
-            </Link>
-          </div>
-        );
-      })}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
