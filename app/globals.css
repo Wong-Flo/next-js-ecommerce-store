@@ -114,9 +114,10 @@ h1 {
   width: 97%;
   height: 380px;
   margin: 20px; /* Space between rows */
-  background-color: lightcoral;
+  background-color: lightgrey;
   box-sizing: border-box; /* Include padding in width calculation */
   border-radius: 15px;
+  color: black;
 }
 .long {
   width: 75%;

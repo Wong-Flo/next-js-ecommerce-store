@@ -5,8 +5,37 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="xLarge">
-      <h1>About Page</h1>
-    </div>
+    <>
+      <div className="xLarge">
+        <h1>About Page</h1>
+      </div>
+      <div className="container">
+        <div className="small" style={{ display: 'flex' }}>
+          <h2>Story</h2>
+        </div>
+        <div
+          className="large"
+          style={{
+            fontSize: '20px',
+          }}
+        >
+          Coffe Shop Story
+        </div>
+        <div className="small" style={{ display: 'flex' }}>
+          <h2>Contact</h2>
+        </div>
+        <div
+          className="large"
+          style={{
+            fontSize: '20px',
+          }}
+        >
+          Email
+          <br /> location
+          <br /> Phone number
+          <br />
+        </div>
+      </div>
+    </>
   );
 }
