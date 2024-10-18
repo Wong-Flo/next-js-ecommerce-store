@@ -4,5 +4,9 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  return <h1>About Page</h1>;
+  return (
+    <div className="xLarge">
+      <h1>About Page</h1>
+    </div>
+  );
 }

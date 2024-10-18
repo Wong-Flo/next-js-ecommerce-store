@@ -1,13 +1,12 @@
 'use server';
 import { cookies } from 'next/headers';
-import { getProduct } from '../database/productlist';
 
-export async function createCookieAmount(cookieAmount, product) {
+export async function createCookieAmount(cookieAmount, productId) {
   (await cookies()).set(
     'cookieAmount',
     JSON.stringify([
       {
-        Id: getProduct(product.id),
+        Id: productId,
         Amount: cookieAmount,
       },
     ]),

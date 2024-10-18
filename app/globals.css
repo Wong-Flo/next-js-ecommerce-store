@@ -1,6 +1,6 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,12 +67,120 @@ h1 {
   justify-content: space-between; /* Optional, adds space between divs */
 }
 .small {
-  width: 32%;
-  margin-bottom: 20px; /* Space between rows */
-  background-color: transparent;
+  width: 30%;
+  height: 380px;
+  margin: 20px; /* Space between rows */
+  background-color: lightgray;
   padding: 10px; /* Optional, space inside each div */
   box-sizing: border-box; /* Include padding in width calculation */
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.xSmall {
+  width: 15%;
+  height: 200px;
+  margin: 20px; /* Space between rows */
+  background-color: lightblue;
+  padding: 10px; /* Optional, space inside each div */
+  border-radius: 15px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.large {
+  width: 60%;
+  height: 380px;
+  margin: 20px; /* Space between rows */
+  background-color: lightgray;
+  padding: 10px; /* Optional, space inside each div */
+  box-sizing: border-box; /* Include padding in width calculation */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.xLarge {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 380px;
+  margin: 20px; /* Space between rows */
+  background-color: lightcoral;
+  box-sizing: border-box; /* Include padding in width calculation */
+  border-radius: 15px;
+}
+.long {
+  width: 75%;
+  height: 200px;
+  margin: 20px; /* Space between rows */
+  background-color: lightgray;
+  padding: 10px; /* Optional, space inside each div */
+  box-sizing: border-box; /* Include padding in width calculation */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.productDisplay {
+  width: 30%;
+  height: 480px;
+  margin: 40px; /* Space between rows */
+  background-color: lightgray;
+  padding: 20px; /* Optional, space inside each div */
+  box-sizing: border-box; /* Include padding in width calculation */
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.addToCartBtn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
 
+.addToCartBtn:hover {
+  background-color: #218838;
+}
+
+.plusAndMinusBtn {
+  background-color: lightblue;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 15px;
+}
+.plusAndMinusBtn:hover {
+  background-color: darkcyan;
+}
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightsalmon;
+  font-size: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;

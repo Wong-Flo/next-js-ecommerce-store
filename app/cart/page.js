@@ -1,4 +1,4 @@
-import { cookies } from 'next/headers';
+// import { cookies } from 'next/headers';
 
 export const metadata = {
   title: 'Cart',
@@ -6,11 +6,13 @@ export const metadata = {
 };
 
 export default async function CartPage() {
-  const totalItemsInCart = (await cookies()).get('cookieAmount');
+  /* const totalItemsInCart = (await cookies()).get('cookieAmount'); */
   return (
     <>
-      <h1>Cart Page</h1>
-      <h4>In Shopping Cart: {totalItemsInCart.value} </h4>
+        <div className="xLarge">
+        <h1>Cart Page</h1>
+      </div>
+      {/* <h4>In Shopping Cart: {totalItemsInCart.value} </h4> */}
     </>
   );
 }

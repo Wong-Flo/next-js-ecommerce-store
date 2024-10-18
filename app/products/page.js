@@ -11,7 +11,9 @@ export default function ProductPage() {
   const products = getProducts();
   return (
     <div>
-      <h1>Product Page</h1>
+      <div className="xLarge">
+        <h1>Product Page</h1>
+      </div>
       <div className="container">
         {products.map((product) => {
           return (
@@ -24,7 +26,14 @@ export default function ProductPage() {
                   height={250}
                 />
               </Link>
-              <div>{product.productName}</div>
+              <div
+                style={{
+                  marginTop: '15px',
+                }}
+              >
+                {product.productName}
+              </div>
+              <button className="addToCartBtn">Add to Cart</button>
             </div>
           );
         })}

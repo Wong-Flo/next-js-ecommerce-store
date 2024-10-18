@@ -1,7 +1,16 @@
 export default function Home() {
   return (
     <div>
-      <h1> Hello Home</h1>
+      <div className="xLarge">
+        <h1
+          style={{
+            fontSize: '70px',
+            fontWeight: 'bold',
+          }}
+        >
+          Just Brew It!
+        </h1>
+      </div>
     </div>
   );
 }

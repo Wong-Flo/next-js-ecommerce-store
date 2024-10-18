@@ -9,10 +9,10 @@ export default function SetCookieAmountForm({ productId }) {
   return (
     <form>
       {/* Display the current value of cookieAmountValue */}
-      {cookieAmountValue}
 
       {/* Increment Button */}
       <button
+        className="plusAndMinusBtn"
         formAction={
           async () => await createCookieAmount(cookieAmountValue, productId) // This async function will call the server action to update the cookie amount with the current value and productId.
         }
@@ -20,9 +20,11 @@ export default function SetCookieAmountForm({ productId }) {
       >
         +
       </button>
+      {cookieAmountValue}
 
       {/* Decrement Button */}
       <button
+        className="plusAndMinusBtn"
         formAction={
           async () => await createCookieAmount(cookieAmountValue, productId) // Call the server action to update the cookie amount with the current value and productId.
         }

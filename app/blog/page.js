@@ -4,5 +4,41 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  return <h1>Blog Page</h1>;
+  return (
+    <>
+      <div className="xLarge">
+        <h1>Blog Page</h1>
+      </div>
+      <div className="container">
+        <div style={{ display: 'grid', margin: '15px' }} className="large">
+          <h4>"Brewing Memories: My Coffee Journey"</h4>
+          <p>
+            I’ll share anecdotes from my favorite coffee moments, from the cozy
+            café where I first discovered the joys of pour-over brewing to the
+            local roaster that taught me the nuances of bean selection. Each
+            story will transport you to the places and experiences that have
+            shaped my appreciation for this beloved drink.
+          </p>
+        </div>
+        <div style={{ display: 'flex' }} className="small">
+          Something will be here
+        </div>
+        <div className="xSmall">
+          Profile
+          <div className="profilePic">Pic</div>
+        </div>
+        <div className="long">Comments</div>
+        <div className="xSmall">
+          Profile
+          <div className="profilePic">Pic</div>
+        </div>
+        <div className="long">Comments</div>
+        <div className="xSmall">
+          Profile
+          <div className="profilePic">Pic</div>
+        </div>
+        <div className="long">Comments</div>
+      </div>
+    </>
+  );
 }

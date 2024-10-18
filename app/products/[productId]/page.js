@@ -20,26 +20,48 @@ export default async function singleProductPage(props) {
   // Retrieve the product data using the productId from the dynamic route (props.params).
 
   return (
-    <div>
-      <h2>Item Page for {singleProduct.productName}</h2>
-      <Image
-        src={`/images/${singleProduct.productName.toLowerCase()}.jpg`}
-        alt={singleProduct.productName}
-        width={200}
-        height={250}
-      />
-      {/* Display the product price */}
-      <h4>Price:</h4>
-      <h5>{singleProduct.price}</h5>
-      {/* Show the product's price. The price is retrieved from the product object. */}
+    <>
+      <div className="xLarge">
+        <h1>Item Page for {singleProduct.productName}</h1>
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        className="container"
+      >
+        <div className="productDisplay">
+          <Image
+            src={`/images/${singleProduct.productName.toLowerCase()}.jpg`}
+            alt={singleProduct.productName}
+            width={200}
+            height={250}
+          />
+          {/* Display the product price */}
+          <h4>Price:</h4>
+          <h5>{singleProduct.price}</h5>
 
-      {/* Display the product description */}
-      <h4>Description:</h4>
-      <h5>{singleProduct.description}</h5>
-      {/* Show the product's description retrieved from the product object. */}
+          {/* Show the product's price. The price is retrieved from the product object. */}
 
-      {/* Render the form where users can set the cookie amount for this product */}
-      <SetCookieAmountForm />
-    </div>
+          {/* Display the product description */}
+          <h4>Description:</h4>
+          <h5>{singleProduct.description}</h5>
+          {/* Show the product's description retrieved from the product object. */}
+
+          {/* Render the form where users can set the cookie amount for this product */}
+          <SetCookieAmountForm productId={singleProduct.id} />
+          <button
+            style={{
+              marginTop: '5px',
+            }}
+            className="addToCartBtn"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
