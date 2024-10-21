@@ -32,7 +32,7 @@ export default async function singleProductPage(props) {
         }}
         className="container"
       >
-        <div className="productDisplay">
+        <div data-test-id="product-<product id>" className="productDisplay">
           <Image
             src={`/images/${singleProduct.productName.toLowerCase()}.jpg`}
             alt={singleProduct.productName}
@@ -52,14 +52,6 @@ export default async function singleProductPage(props) {
 
           {/* Render the form where users can set the cookie amount for this product */}
           <SetCookieAmountForm productId={singleProduct.id} />
-          <button
-            style={{
-              marginTop: '5px',
-            }}
-            className="addToCartBtn"
-          >
-            Add to Cart
-          </button>
         </div>
       </div>
     </>
