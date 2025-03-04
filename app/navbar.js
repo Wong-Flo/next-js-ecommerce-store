@@ -1,10 +1,10 @@
 // import { cookies } from 'next/headers';
 import Link from 'next/link';
 
-export default async function NavBar() {
+export default function NavBar() {
   // const totalItemsInCart = (await cookies()).get('cookieAmount');
   return (
-    <div>
+    <div className="navBar">
       <nav>
         <Link className="navBarItem" href="/">
           Home
