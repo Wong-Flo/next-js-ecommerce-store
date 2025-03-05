@@ -29,7 +29,12 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header>
         {children}
-        <footer>Footer</footer>
+        <footer
+          style={{ textAlign: 'center', padding: '20px', fontSize: '0.8rem' }}
+        >
+          <div>Impressum | Est. 2024 </div>
+          <div>Designed by F.W.</div>
+        </footer>
       </body>
     </html>
   );

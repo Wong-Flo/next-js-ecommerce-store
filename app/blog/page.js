@@ -21,7 +21,7 @@ export default function BlogPage() {
           </p>
         </div>
         <div style={{ display: 'flex' }} className="small">
-          Something will be here
+          Something can be added here
         </div>
         <div className="xSmall">
           Profile

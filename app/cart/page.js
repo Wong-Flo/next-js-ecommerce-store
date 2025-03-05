@@ -1,5 +1,6 @@
 import { cookies } from 'next/headers';
 import Image from 'next/image';
+import Link from 'next/link';
 import { UpdateCart } from '../cart/RemoveItemFromCart.js';
 import { getProduct } from '../products/database/productlist';
 
@@ -92,6 +93,18 @@ export default async function CartItem() {
         >
           Total Amount for Cart:
           <p>${totalSum.toFixed(2)}</p>
+          <div>
+            <Link
+              href="/cart/checkout"
+              style={{
+                backgroundColor: 'green',
+                padding: '0.5rem',
+                borderRadius: '15px',
+              }}
+            >
+              Checkout
+            </Link>
+          </div>
         </div>
       )}
     </>
