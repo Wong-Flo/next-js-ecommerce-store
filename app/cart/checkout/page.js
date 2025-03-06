@@ -13,22 +13,22 @@ export default function CartPage() {
         <form>
           <label>
             First name:
-            <input type="text" required />
+            <input required />
             <br />
             Last name:
-            <input type="text" required />
+            <input required />
             <br />
             Delivery Address:
-            <input type="text" required />
+            <input required />
             <br />
             Postal Code:
-            <input type="text" required />
+            <input required />
             <br />
             Country:
-            <input type="text" required />
+            <input required />
             <br />
             Payment Methods:
-            <input type="text" required />
+            <input required />
           </label>
         </form>
 
