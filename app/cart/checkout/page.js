@@ -32,7 +32,7 @@ export default function CartPage() {
           </label>
         </form>
 
-        <button>Submit</button>
+        <button className="SubmitButton">Submit</button>
       </div>
     </>
   );
