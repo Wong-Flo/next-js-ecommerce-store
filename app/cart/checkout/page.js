@@ -28,6 +28,18 @@ export default function CartPage() {
             <input required />
             <br />
             Payment Methods:
+            <select required>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="American Express">American Express</option>
+              <option value="PayPal">PayPal</option>
+            </select>
+            <br />
+            Card Number:
+            <input required />
+            Valid Thru:
+            <input required />
+            CVV:
             <input required />
           </label>
         </form>
