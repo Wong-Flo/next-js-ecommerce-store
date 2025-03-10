@@ -27,17 +27,32 @@ export default function BlogPage() {
           Profile
           <div className="profilePic">Pic</div>
         </div>
-        <div className="long">Comments</div>
+        <div className="long">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+          aliquip ex ea commodo consequat."
+        </div>
         <div className="xSmall">
           Profile
           <div className="profilePic">Pic</div>
         </div>
-        <div className="long">Comments</div>
+        <div className="long">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+          aliquip ex ea commodo consequat."
+        </div>
         <div className="xSmall">
           Profile
           <div className="profilePic">Pic</div>
         </div>
-        <div className="long">Comments</div>
+        <div className="long">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+          aliquip ex ea commodo consequat."
+        </div>
       </div>
     </>
   );
