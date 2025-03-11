@@ -21,7 +21,8 @@ export default function BlogPage() {
           </p>
         </div>
         <div style={{ display: 'flex' }} className="small">
-          Something can be added here
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <div className="xSmall">
           Profile
