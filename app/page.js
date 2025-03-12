@@ -10,6 +10,7 @@ export default function Home() {
         >
           Just Brew It!
         </h1>
+        It's not just coffee, it's a lifestyle.
       </div>
     </div>
   );
