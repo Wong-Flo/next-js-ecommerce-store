@@ -1,23 +1,21 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <div className="xLarge">
-        <h1
-          style={{
-            fontSize: '70px',
-            fontWeight: 'bold',
-          }}
-        >
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <div style={{ marginBottom: '20px' }}>
+        <h1 style={{ fontSize: '70px', fontWeight: 'bold', color: '#333' }}>
           Just Brew It!
         </h1>
-        It's not just coffee, it's a lifestyle.
+        <p style={{ fontSize: '24px', color: '#666' }}>
+          It's not just coffee, it's a lifestyle.
+        </p>
       </div>
       <div
         style={{
           maxWidth: '800px',
-          margin: 'auto',
+          margin: '0 auto',
           textAlign: 'left',
           fontSize: '18px',
+          lineHeight: '1.6',
           color: '#444',
         }}
       >
@@ -27,6 +25,7 @@ export default function Home() {
             backgroundColor: '#f9f9f9',
             borderRadius: '5px',
             boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+            marginBottom: '20px',
           }}
         >
           <p>
