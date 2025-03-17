@@ -7,7 +7,14 @@ export default function BlogPage() {
   return (
     <>
       <div className="xLarge">
-        <h1>Blog Page</h1>
+        <h1>Our Coffee Journey</h1>
+        <br />
+        <p style={{ fontSize: '18px', color: '#666', marginTop: '10px' }}>
+          Welcome to our blog! Here, we share stories, tips, and insights about
+          our coffee journey. From brewing techniques to the best coffee beans,
+          join us as we explore the world of coffee and share our passion with
+          you.
+        </p>
       </div>
       <div className="container">
         <div style={{ display: 'grid', margin: '15px' }} className="large">
