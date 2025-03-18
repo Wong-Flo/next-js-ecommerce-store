@@ -10,21 +10,20 @@ export default function BlogPage() {
         <h1>Our Coffee Journey</h1>
         <br />
         <p style={{ fontSize: '18px', color: '#666', marginTop: '10px' }}>
-          Welcome to our blog! Here, we share stories, tips, and insights about
-          our coffee journey. From brewing techniques to the best coffee beans,
-          join us as we explore the world of coffee and share our passion with
-          you.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+          aliquip ex ea commodo consequat."
         </p>
       </div>
       <div className="container">
         <div style={{ display: 'grid', margin: '15px' }} className="large">
           <h4>"Brewing Memories: My Coffee Journey"</h4>
           <p>
-            I’ll share anecdotes from my favorite coffee moments, from the cozy
-            café where I first discovered the joys of pour-over brewing to the
-            local roaster that taught me the nuances of bean selection. Each
-            story will transport you to the places and experiences that have
-            shaped my appreciation for this beloved drink.
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+            aliquip ex ea commodo consequat."
           </p>
         </div>
         <div style={{ display: 'flex' }} className="small">
