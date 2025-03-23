@@ -9,12 +9,7 @@ export default function BlogPage() {
       <div className="xLarge">
         <h1>Our Coffee Journey</h1>
         <br />
-        <p style={{ fontSize: '18px', color: '#666', marginTop: '10px' }}>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
-          aliquip ex ea commodo consequat."
-        </p>
+        <p style={{ fontSize: '18px', color: '#666', marginTop: '10px' }}>"</p>
       </div>
       <div className="container">
         <div style={{ display: 'grid', margin: '15px' }} className="large">
