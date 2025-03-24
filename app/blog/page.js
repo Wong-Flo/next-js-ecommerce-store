@@ -14,12 +14,12 @@ export default function BlogPage() {
       <div className="container">
         <div style={{ display: 'grid', margin: '15px' }} className="large">
           <h4>"Brewing Memories: My Coffee Journey"</h4>
-          <p>
+          {/*  <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
             aliquip ex ea commodo consequat."
-          </p>
+          </p> */}
         </div>
         <div style={{ display: 'flex' }} className="small">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
