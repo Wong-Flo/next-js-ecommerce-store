@@ -21,10 +21,10 @@ export default function BlogPage() {
             aliquip ex ea commodo consequat."
           </p> */}
         </div>
-        <div style={{ display: 'flex' }} className="small">
+        {/*  <div style={{ display: 'flex' }} className="small">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
+        </div> */}
         <div className="xSmall">
           Profile
           <div className="profilePic">Pic</div>
