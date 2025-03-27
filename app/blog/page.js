@@ -25,7 +25,7 @@ export default function BlogPage() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div> */}
-        {/* <div className="xSmall">
+        <div className="xSmall">
           Profile
           <div className="profilePic">Pic</div>
         </div>
@@ -34,7 +34,7 @@ export default function BlogPage() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
           aliquip ex ea commodo consequat."
-        </div> */}
+        </div>
         <div className="xSmall">
           Profile
           <div className="profilePic">Pic</div>
